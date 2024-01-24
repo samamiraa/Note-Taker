@@ -51,22 +51,22 @@ app.post('/api/notes', (req, res) => {
     const noteString = JSON.stringify(notes, null, 2);
 
     fs.writeFile('./db/db.json', noteString, (err) => {
-      err
-      ? console.error(err)
-      : console.log(`Note for ${newNote.title} has been written to JSON file`),
-          res.json(newNote);
+      if (err) {
+        console.error(err);
+        res.status(500).json('Error in posting note');
+       } else {
+        console.log(`Note for ${newNote.title} has been written to JSON file`),
+        res.json(newNote);
+        const response = {
+          status:'succuess', 
+          body: newNote,
+        };
+
+        console.log(response);
+        res.status(201).json(response);
+      };
     });
-
-    const response = {
-      status:'succuess', 
-      body: newNote,
-    };
-
-    console.log(response);
-    res.status(201).json(response);
-  } else {
-    res.status(500).json('Error in posting note');
-  };
+  }
 });
 
 app.listen (PORT, () =>
