@@ -26,6 +26,7 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
+
 function uuid() {
   return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
@@ -49,13 +50,12 @@ app.post('/api/notes', (req, res) => {
 
     const noteString = JSON.stringify(notes, null, 2);
 
-    fs.writeFile('./db/db.json', noteString, (err) =>
+    fs.writeFile('./db/db.json', noteString, (err) => {
       err
       ? console.error(err)
-      : console.log(
-          `Note for ${newNote.title} has been written to JSON file`
-        )
-    );
+      : console.log(`Note for ${newNote.title} has been written to JSON file`),
+          res.json(newNote);
+    });
   };
 });
 

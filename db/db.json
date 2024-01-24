@@ -1,7 +1,21 @@
-
- [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+[
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "hello",
+    "text": "bonjour",
+    "noteId": "dafb"
+  },
+  {
+    "title": "Make Dinner",
+    "text": "salmon with rice",
+    "noteId": "465d"
+  },
+  {
+    "title": "Groceries",
+    "text": "Buy Apples",
+    "noteId": "b4d7"
+  }
 ]
