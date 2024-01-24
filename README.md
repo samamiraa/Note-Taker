@@ -35,6 +35,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 ## Credits
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
 
 ## License
 

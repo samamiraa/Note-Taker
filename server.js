@@ -56,6 +56,16 @@ app.post('/api/notes', (req, res) => {
       : console.log(`Note for ${newNote.title} has been written to JSON file`),
           res.json(newNote);
     });
+
+    const response = {
+      status:'succuess', 
+      body: newNote,
+    };
+
+    console.log(response);
+    res.status(201).json(response);
+  } else {
+    res.status(500).json('Error in posting note');
   };
 });
 
