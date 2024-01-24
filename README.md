@@ -1,17 +1,12 @@
 # Note-Taker
 
+Live URL 👇🏼 <br>
+
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Note taker created with express.js where you can add, save, review and delete notes. My motivation to complete this project was to help solidify my understanding. Although there is much more to learn, understanding the basic requests ie. Get, Post & Delete. In the future, I will practice Put & Patch requests as well, but for now this project helped me understand routing on the backend.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,7 +15,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+NPM install express
 
 ## Usage
 
@@ -33,6 +28,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ```
 
 ## Credits
+
+The class activities are always my first point of reference, but thank you to my tutor Andrew for helping me with my delete request and thank you to my TA Daniel and colleague Shawn for answering questions about an error I was getting in my console.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
@@ -51,7 +48,7 @@ N/A
 
 ## Features
 
-If your project has a lot of features, list them here.
+N/A
 
 ## How to Contribute
 
@@ -59,4 +56,4 @@ N/A
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then 
+Create a note, save a note & Delete a note!
