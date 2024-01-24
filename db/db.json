@@ -22,5 +22,25 @@
     "title": "Doctor Appt",
     "text": "Tuesday @ 5pm",
     "noteId": "b19c"
+  },
+  {
+    "title": "Diapers",
+    "text": "Buy diapers",
+    "noteId": "ffea"
+  },
+  {
+    "title": "Taco recipe",
+    "text": "Tortilla, protein, veggies",
+    "noteId": "9770"
+  },
+  {
+    "title": "Haircut",
+    "text": "Book a haircut soon",
+    "noteId": "5dd4"
+  },
+  {
+    "title": "Vacation",
+    "text": "Book trip to france",
+    "noteId": "69a8"
   }
 ]
