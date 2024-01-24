@@ -27,7 +27,7 @@ app.get('*', (req, res) =>
 );
 
 function uuid() {
-  Math.floor((1 + Math.random()) * 0x10000)
+  return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
     .substring(1);
 };
@@ -44,9 +44,12 @@ app.post('/api/notes', (req, res) => {
       noteId: uuid(),
     };
 
-    const noteString = JSON.stringify(newNote);
 
-    fs.writeFile(notes, noteString, (err) =>
+  notes.push(newNote);
+
+    const noteString = JSON.stringify(notes, null, 2);
+
+    fs.writeFile('./db/db.json', noteString, (err) =>
       err
       ? console.error(err)
       : console.log(
