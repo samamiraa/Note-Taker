@@ -26,6 +26,16 @@ app.get('*', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
+app.get('/api/notes/:id', (req, res) => {
+  const noteId = req.params.id;
+  const selectedNote = notes.find(note => note.id === noteId);
+
+  if (selectedNote) {
+    res.json(selectedNote);
+  } else {
+    res.status(404).json({ error: 'Note not found' });
+  };
+});
 
 function uuid() {
   return Math.floor((1 + Math.random()) * 0x10000)
@@ -42,11 +52,10 @@ app.post('/api/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      noteId: uuid(),
+      id: uuid(),
     };
 
-
-  notes.push(newNote);
+    notes.push(newNote);
 
     const noteString = JSON.stringify(notes, null, 2);
 

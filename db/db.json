@@ -6,41 +6,41 @@
   {
     "title": "hello",
     "text": "bonjour",
-    "noteId": "dafb"
+    "id": "dafb"
   },
   {
     "title": "Make Dinner",
     "text": "salmon with rice",
-    "noteId": "465d"
+    "id": "465d"
   },
   {
     "title": "Groceries",
     "text": "Buy Apples",
-    "noteId": "b4d7"
+    "id": "b4d7"
   },
   {
     "title": "Doctor Appt",
     "text": "Tuesday @ 5pm",
-    "noteId": "b19c"
+    "id": "b19c"
   },
   {
     "title": "Diapers",
     "text": "Buy diapers",
-    "noteId": "ffea"
+    "id": "ffea"
   },
   {
     "title": "Taco recipe",
     "text": "Tortilla, protein, veggies",
-    "noteId": "9770"
+    "id": "9770"
   },
   {
     "title": "Haircut",
     "text": "Book a haircut soon",
-    "noteId": "5dd4"
+    "id": "5dd4"
   },
   {
     "title": "Vacation",
     "text": "Book trip to france",
-    "noteId": "69a8"
+    "id": "69a8"
   }
 ]
