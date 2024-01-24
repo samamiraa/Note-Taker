@@ -28,14 +28,25 @@ app.get('*', (req, res) =>
 
 app.get('/api/notes/:id', (req, res) => {
   const noteId = req.params.id;
-  const selectedNote = notes.find(note => note.id === noteId);
+  const activeNote = notes.find(note => note.id === noteId);
 
-  if (selectedNote) {
-    res.json(selectedNote);
+  if (activeNote) {
+    res.json(activeNote);
   } else {
-    res.status(404).json({ error: 'Note not found' });
+    res.status(404).json('Note not found');
   };
 });
+
+app.delete('/api/notes/:id', (req, res) => {
+  const noteId = req.params.id;
+  const activeNote = notes.find(note => note.id === noteId);
+
+  if (activeNote) {
+    notes.splice(activeNote, 1);
+
+    
+  }
+})
 
 function uuid() {
   return Math.floor((1 + Math.random()) * 0x10000)

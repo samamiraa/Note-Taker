@@ -38,6 +38,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+https://www.geeksforgeeks.org/express-js-app-delete-function/
 
 ## License
 
