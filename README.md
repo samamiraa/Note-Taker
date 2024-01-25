@@ -19,11 +19,37 @@ NPM install express
 
 ## Usage
 
-First you will start off on the landing page of the note taker.<br>
+First you will start off on the landing page of the note taker<br>
 <br>
 <img width="1280" alt="landing page" src="./reademeimg/landing page.png"><br>
 <br>
-Once you click the get started
+Once you click the get started button, it will take you to existing notes and a text area where you can create new notes<br>
+<br>
+<img width="1280" alt="notes page" src="./reademeimg/note screen.png"><br>
+<br>
+When you start typing in a title amd text for your note, two buttons will appear<br>
+<br>
+<img width="1280" alt="new note" src="./reademeimg/save note.png"><br>
+<br>
+If you hit clear form, it will clear the text fields<br>
+<br>
+<img width="1280" alt="notes page" src="./reademeimg/note screen.png"><br>
+<br>
+If you hit save note, then you will see the note added to the left side of the page where the existing notes are<br>
+<br>
+<img width="1280" alt="note added to side" src="./reademeimg/note added to side.png"><br>
+<br>
+If you click on an existing note, it brings it over to the text area for review and a button appears on the top right to create a new note<br>
+<br>
+<img width="1280" alt="existing note" src="./reademeimg/existing note.png"><br>
+<br>
+If you click new note, it will clear the text fields for you to enter a new note<br>
+<br>
+<img width="1280" alt="note added to side" src="./reademeimg/note added to side.png"><br>
+<br>
+If you decide you no longer need the note, you can click the little red trash can beside the note to delete it<br>
+<br>
+<img width="1280" alt="deleted note" src="./reademeimg/deleted note.png"><br>
 
 ## Credits
 
