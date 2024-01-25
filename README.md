@@ -19,13 +19,11 @@ NPM install express
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+First you will start off on the landing page of the note taker.<br>
+<br>
+<img width="1280" alt="landing page" src="./reademeimg/landing page.png"><br>
+<br>
+Once you click the get started
 
 ## Credits
 
@@ -37,6 +35,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 https://www.geeksforgeeks.org/express-js-app-delete-function/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 
 ## License
 

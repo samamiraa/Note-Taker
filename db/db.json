@@ -5,38 +5,13 @@
     "id": "dafb"
   },
   {
+    "title": "bonjour",
+    "text": "hello",
+    "id": "39b6"
+  },
+  {
     "title": "Make Dinner",
-    "text": "salmon with rice",
-    "id": "465d"
-  },
-  {
-    "title": "Groceries",
-    "text": "Buy Apples",
-    "id": "b4d7"
-  },
-  {
-    "title": "Doctor Appt",
-    "text": "Tuesday @ 5pm",
-    "id": "b19c"
-  },
-  {
-    "title": "Diapers",
-    "text": "Buy diapers",
-    "id": "ffea"
-  },
-  {
-    "title": "Taco recipe",
-    "text": "Tortilla, protein, veggies",
-    "id": "9770"
-  },
-  {
-    "title": "Haircut",
-    "text": "Book a haircut soon",
-    "id": "5dd4"
-  },
-  {
-    "title": "Vacation",
-    "text": "Book trip to france",
-    "id": "69a8"
+    "text": "Salmon",
+    "id": "9017"
   }
 ]

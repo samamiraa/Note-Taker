@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-const notes = require('./db/db.json')
+let notes = require('./db/db.json')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -39,14 +39,21 @@ app.get('/api/notes/:id', (req, res) => {
 
 app.delete('/api/notes/:id', (req, res) => {
   const noteId = req.params.id;
-  const activeNote = notes.find(note => note.id === noteId);
+  notes = notes.filter(note => note.id !== noteId);
 
-  if (activeNote) {
-    notes.splice(activeNote, 1);
+  const noteString = JSON.stringify(notes, null, 2);
 
-    
-  }
-})
+  fs.writeFile('./db/db.json', noteString, (err) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json('Error in deleting note');
+     } else {
+      console.log(`Note has been deleted`);
+      return res.status(200).json(notes);
+     }
+  });
+
+});
 
 function uuid() {
   return Math.floor((1 + Math.random()) * 0x10000)
