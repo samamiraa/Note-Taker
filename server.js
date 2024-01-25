@@ -1,31 +1,41 @@
+//! dependancies
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
+
+//!import db.json
 let notes = require('./db/db.json')
 const app = express();
+//!port for server
 const PORT = process.env.PORT || 3001;
 
+//! middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+//! root route to index.html
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
+//! route to notes html
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
 
+//! get request to get existing notes from json file
 app.get('/api/notes', (req, res) => {
   console.info(`${req.method} request received to get notes`);
   return res.json(notes);
 });
 
+//! Fallback route for when a user attempts to visit routes that don't exist
 app.get('*', (req, res) => 
   res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
+//! get request for active note to display in text area
 app.get('/api/notes/:id', (req, res) => {
   const noteId = req.params.id;
   const activeNote = notes.find(note => note.id === noteId);
@@ -37,6 +47,7 @@ app.get('/api/notes/:id', (req, res) => {
   };
 });
 
+//! delete request for specific note to be deleted, then filters in notes to keep & rewrites json file
 app.delete('/api/notes/:id', (req, res) => {
   const noteId = req.params.id;
   notes = notes.filter(note => note.id !== noteId);
@@ -55,12 +66,14 @@ app.delete('/api/notes/:id', (req, res) => {
 
 });
 
+//! function to create random id for note
 function uuid() {
   return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
     .substring(1);
 };
 
+//! post request to create new note then push to array and rewrite json file with new note added
 app.post('/api/notes', (req, res) => {
   console.info(`${req.method} request recieved to add a new note`);
 
@@ -98,6 +111,7 @@ app.post('/api/notes', (req, res) => {
   };
 });
 
+//! listens for connections
 app.listen (PORT, () =>
 console.log(`App listening at http://localhost:${PORT}`)
 );
