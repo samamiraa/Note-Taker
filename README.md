@@ -1,6 +1,7 @@
 # Note-Taker
 
 Live URL 👇🏼 <br>
+https://note-taker-11kd.onrender.com
 
 ## Description
 
